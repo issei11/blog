@@ -23,6 +23,8 @@ Route::get('/posts/{post}', 'PostController@show');
 
 Route::get('/posts/{post}/edit', 'PostController@edit');
 
+Route::get('/categories/{category}', 'CategoryController@index');
+
 Route::put('/posts/{post}', 'PostController@update');
 
 Route::delete('/posts/{post}', 'PostController@delete');

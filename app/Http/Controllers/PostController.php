@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Post;
+use App\Category;
 use Illuminate\Http\Request;
 use App\Http\Requests\PostRequest;
 
@@ -26,9 +27,9 @@ class PostController extends Controller
         return redirect('/posts/' . $post->id);
     }
         
-    public function create()
+    public function create(Category $category)
     {
-        return view('posts/create');
+        return view('posts/create')->with(['categories' => $category->get()]);;
     }
     
     /**
