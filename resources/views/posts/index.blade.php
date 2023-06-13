@@ -17,6 +17,7 @@
                             {{ $post->title }}
                         </a>
                     </h2>
+                    <a href="/categories/{{ $post->category->id }}">{{ $post->category->name }}</a>
                     <p class='body'>
                         {{ $post->body }}
                     </p>
