@@ -14,3 +14,5 @@ class AppServiceProvider extends ServiceProvider
 }
 
 //質問対応用PUSH
+
+//質問大王用PUSH2
